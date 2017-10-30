@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>参数设置</title>
+    <link href="../css/js2.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header>
+    <i class="back" onclick="ab()">
+
+    </i>
+    <h1>
+        参数设置
+    </h1>
+    <i class="help">
+
+    </i>
+</header>
+<div class="main">
+    <div class="wrap1">
+        <div class="left">
+            <span>
+                玩<br/>
+                家<br/>
+                配<br/>
+                比
+            </span>
+        </div>
+        <div class="right">
+            <div class="right-top">
+                <label for="killer">
+                    杀手<input type="text" id="killer" value="0">人
+                </label>
+                <label for="people">
+                    平民<input type="text" id="people" value="0">人
+                </label>
+            </div>
+            <div class="right-bottom">
+                <button type="button" id="set">
+                    <span>
+                        点击设置
+                    </span>
+                    <i class="set-game">
+
+                    </i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="wrap2">
+        <form>
+            <div class="form-top">
+                <input type="text" id="word1" placeholder="水民词组">
+            </div>
+            <div class="form-bottom">
+                <input type="text" id="word2" placeholder="幽灵词组">
+            </div>
+        </form>
+    </div>
+    <div class="wrap3">
+        <div class="wrap3-top">
+            <label for="set-players">
+                玩家人数：<input type="text" id="set-players" value="4">人 <span id="req">玩家数量为4-18</span>
+            </label>
+        </div>
+        <div class="wrap3-bottom">
+            <button type="button" id="btn1">
+                <img src="../img/js2-jian.png">
+            </button>
+            <label for="set-number">
+                <input type="range" id="set-number" min="4" max="18" step="1" value="4">
+            </label>
+            <button type="button" id="btn2">
+                <img src="../img/js2-jia.png">
+            </button>
+        </div>
+    </div>
+</div>
+<footer>
+    <button type="button" id="play">
+        去发牌
+    </button>
+</footer>
+<script src="../js/js2.js">
+
+</script>
+</body>
+</html>
