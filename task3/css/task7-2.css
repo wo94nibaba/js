@@ -114,7 +114,6 @@ audio {
 }
 .sub {
     visibility: hidden;
-    /*opacity: 0;*/
     width:100%;
     list-style: none;
     padding:0;
