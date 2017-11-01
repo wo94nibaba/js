@@ -56,3 +56,4 @@ function quit() {
         window.location.href="task7-1.html";
     }
 }
+
