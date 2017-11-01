@@ -34,54 +34,40 @@ h1 {
     background: url("../img/js3-closed.png");
 }
 .main {
-    min-height: 60vh;
     padding: 5rem 0;
-    width: 100%;
     background: #29bde0;
 }
-.row {
-    width: 100%;
-    margin: 0 2%;
-    padding: 0;
-}
-.b-box {
-    float: left;
-    margin: 0 5%;
-    width: 22%;
-}
-.box {
-    border: 5px solid #ffffff;
-}
-.box1 {
-    padding: 40% 0;
-    line-height: 0;
+.circle {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 5rem;
+    width: 10rem;
+    line-height: 10rem;
+    font-size: 4rem;
     text-align: center;
-    font-size: 3rem;
-    background: #f5c97b;
+    vertical-align: middle;
+    color: #f56b81;
+    border-radius: 50%;
+    border: 3px solid #ffedc5;
+    background: #ffffff;
 }
-.box2 {
-    padding: 10% 0;
-    line-height: 0;
-    text-align: center;
-    font-size: 3rem;
-    color: #ffffff;
-    background: #83b09a;
-}
-.sub {
-    visibility: hidden;
-    padding: 2rem 0;
-    width: 100%;
-}
-.b-box:hover .sub {
-    visibility: visible;
-}
-.sub1 {
-    width: 30%;
-    padding: 15% 0;
+.pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    background: url("../img/sub-1.png") no-repeat;
-    background-size: 100%;
-    background-color: white;
+    width: 70%;
+    height: 80rem;
+    text-align: center;
+    background: #ffedc5;
+    border: 6px solid #fff;
+}
+#role-num {
+    padding-top: 10rem;
+    font-size: 5rem;
+    color: #29bde0;
 }
 footer {
     width: 100%;

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看身份</title>
+    <link rel="stylesheet" href="../css/js3.css" type="text/css">
+    <script src="../js/jquery-3.2.1.min.js">
+    </script>
+</head>
+<body>
+<header>
+    <i class="back" onclick="back()">
+
+    </i>
+    <h1>
+        查看身份
+    </h1>
+    <i class="closed" onclick="quit()">
+
+    </i>
+</header>
+<div class="main">
+    <div class="circle">
+        <span id="circle-value">1</span>
+    </div>
+    <div class="pic">
+        <img src="../img/js3-fp1.png" id="pic1" >
+        <img src="../img/js3-fp2.png" id="pic2" style="display: none">
+        <p id="role-num" style="display: none">
+            角色：<span id="role-value"></span>
+        </p>
+    </div>
+</div>
+<footer>
+    <button type="button" id="btn1" >
+        查看<span id="num-value1">1</span>号身份
+    </button>
+    <button type="button" id="btn2" style="display: none">
+        隐藏并传递给<span id="num-value2">1</span>号
+    </button>
+</footer>
+<script src="../js/js3.js">
+
+</script>
+</body>
+</html>
