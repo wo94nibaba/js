@@ -1,3 +1,4 @@
+alert($);
 // 底部按钮点击事件函数
 $(document).ready(function(){
     // 从上一个页面获取参数
