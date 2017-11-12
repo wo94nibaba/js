@@ -31,7 +31,7 @@ $(document).ready(function(){
     // brn2按钮事件函数
     $("#btn2").click(function() {
         if(b===1) {
-            window.location.href="js4.html";
+            window.location.href="js4-4.html";
         }
         else {
             $("#btn1").show();
@@ -45,6 +45,7 @@ $(document).ready(function(){
         }
     });
 });
+
 // header部分页面跳转函数
 function back() {
     window.location.href="js2.html";
