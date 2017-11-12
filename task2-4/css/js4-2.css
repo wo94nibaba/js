@@ -63,7 +63,7 @@ h1 {
     color: #ffffff;
 }
 .main {
-    min-height: 60vh;
+    min-height: 100vh;
     padding: 5rem 2%;
     width: 96%;
     background: #29bde0;
@@ -105,9 +105,12 @@ h1 {
     background-color: white;
 }
 footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
     line-height: 20rem;
     text-align: center;
+    border-top: 2px solid #ffffff;
     background: #29bde0;
 }
 footer button {
