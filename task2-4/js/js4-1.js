@@ -317,12 +317,12 @@ $(document).ready(function() {
 
     });
     $("#death").click(function() {
-        confirm("请死者亮明身份并且发表遗言");
+        alert("请死者亮明身份并且发表遗言");
         $("#death").css("background","#9a9a9a");
         $(cstyle[1]).css("border-right","20px solid #9a9a9a");
     });
     $("#talk").click(function () {
-        confirm("玩家依次发表讨论");
+        alert("玩家依次发表讨论");
         $("#talk").css("background","#9a9a9a");
         $(cstyle[2]).css("border-right","20px solid #9a9a9a");
     });
