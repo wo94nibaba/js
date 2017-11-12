@@ -34,16 +34,6 @@ $(document).ready(function() {
     // console.log(cstyle);
     console.log(day);
 
-
-    // console.log("第"+day+"天");
-    // console.log("杀手数："+killern);
-    // console.log("水民数量："+peoplen);
-    // console.log(role);
-    // console.log(lastsel);
-    // console.log(stage);
-
-
-
     // 选择页面渲染效果
 
     function write() {
@@ -189,102 +179,6 @@ $(document).ready(function() {
         $(this).next().toggle(200);
     });
 
-
-
-    // var event = parseInt(sessionStorage.getItem("Event"));
-    // console.log(event);
-    // var fsm = function(events,tab){
-    //     if(events === tab){
-    //         switch(tab){
-    //             case 1:
-    //                 $("#killer").style.background = "#83b09a";
-    //                 // $("#kill span").addClass("click");
-    //                 window.location.href = "js4-2.html?kill";
-    //                 console.log("case:1 event = "+event);
-    //                 break;
-    //             case 2:
-    //                 $("#death").style.background = "#83b09a";
-    //                 // $("#last-word span").addClass("click");
-    //                 event++;
-    //                 confirm("亡灵请发表遗言");
-    //                 console.log("case:2 event = "+event);
-    //                 break;
-    //             case 3:
-    //                 $("#talk").style.background = "#83b09a";
-    //                 // $("#speak span").addClass("click");
-    //                 event++;
-    //                 confirm("玩家请依次发言");
-    //                 console.log("case:3 event = "+event);
-    //                 break;
-    //             case 4:
-    //                 $("#vote").style.background = "#83b09a";
-    //                 // $("#vote span").addClass("click");
-    //                 event = 1;
-    //                 sessionStorage.setItem("Event",event);
-    //                 window.location.href = "js4-2.html?vote";
-    //                 console.log("case:4 event = "+event);
-    //                 break;
-    //         }
-    //     }else if(tab < event){
-    //         confirm("请点下一步");
-    //     }else{
-    //         confirm("请按顺序来");
-    //     }
-    // };
-    //
-    // // 杀手杀人
-    // $("#killer").onclick = function(){
-    //     fsm(event,1);
-    // };
-    //
-    // // 亡灵发表遗言
-    // $("#death").onclick = function(){
-    //     fsm(event,2);
-    // };
-    //
-    // // 玩家依次发言
-    // $("#talk").onclick = function(){
-    //     fsm(event,3);
-    // };
-    //
-    // //全民投票
-    // $("#vote").onclick = function(){
-    //     fsm(event,4);
-    // };
-    //
-    // //其他页面返回本页面，用来重新渲染已经操作过得tag
-    // function Color(){
-    //     for(var i=1;i<4;i++){
-    //         for(var j=1;j<event;j++){
-    //             if(i === j){
-    //                 switch(j){
-    //                     case 1:
-    //                         $("#killer").css("background","#9a9a9a");
-    //                         // $("#kill span").addClass("click");
-    //                         console.log("case:1 event = "+event);
-    //                         break;
-    //                     case 2:
-    //                         $("#death").css("background","#9a9a9a");
-    //                         // $("#last-word span").addClass("click");
-    //                         console.log("case:2 event = "+event);
-    //                         break;
-    //                     case 3:
-    //                         $("#talk").css("background","#9a9a9a");
-    //                         // $("#speak span").addClass("click");
-    //                         console.log("case:3 event = "+event);
-    //                         break;
-    //                     case 4:
-    //                         $("#tvote").css("background","#9a9a9a");
-    //                         // $("#vote span").addClass("click");
-    //                         console.log("case:4 event = "+event);
-    //                         break;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-    // Color();
-    // console.log("color: event = "+event);
 
 // 控制详细数据的显示和隐藏
     $("#killery").hide();
