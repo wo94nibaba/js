@@ -18,11 +18,12 @@ $(document).ready(function(){
 
     var boxer=document.getElementsByClassName("box1");
 
-    console.log(role);
-    console.log(num);
-    console.log(killern);
-    console.log(peoplen);
-    console.log(player);
+    // console.log(role);
+    // console.log(num);
+    // console.log(killern);
+    // console.log(peoplen);
+    // console.log(player);
+    console.log(day);
 
     // 显示角色
     function Write(){
@@ -181,6 +182,7 @@ $(document).ready(function(){
                }
                else {
                    window.location.href="js4-1.html?kill";
+                   lastsel=null;
                }
            }
        }
@@ -195,14 +197,18 @@ $(document).ready(function(){
                role[lastsel].murder="people";
                sessionStorage.setItem("key",JSON.stringify(role));
                day+=1;
+
                calculate();
                if(deadkiller===killern) {
+
                    window.location.href="task7-3.html?vote"
                }
                else if(deadpeople===peoplen) {
+
                    window.location.href = "task7-3.html?kill";
                }
                else {
+
                    window.location.href = "js4-1.html?vote";
                }
            }

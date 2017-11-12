@@ -42,7 +42,7 @@ $(document).ready(function() {
 
     // 显示每一天详细数据
     for(var i=1;i<day;i++) {
-        var name1,name2,number1,number2;
+        var name1=null,name2=null,number1=null,number2=null;
         for(var j=0;j<num;j++) {
             if(role[j].date===i&&role[j].status==="dead"&&role[j].murder==="killer") {
                 number1=j+1;
@@ -56,7 +56,7 @@ $(document).ready(function() {
 
             }
         }
-        if(name1===undefined) {
+        if(name1===null) {
             $(".main").append(
                 '<div class="itm">' +
                 '<div class="box">' +

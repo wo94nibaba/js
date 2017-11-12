@@ -30,8 +30,10 @@ $(document).ready(function() {
     var kstyle=document.getElementsByClassName("kill");
 
     var cstyle=document.getElementsByClassName("ciro");
-    console.log(kstyle);
-    console.log(cstyle);
+    // console.log(kstyle);
+    // console.log(cstyle);
+    console.log(day);
+
 
     // console.log("第"+day+"天");
     // console.log("杀手数："+killern);
@@ -40,11 +42,14 @@ $(document).ready(function() {
     // console.log(lastsel);
     // console.log(stage);
 
+
+
     // 选择页面渲染效果
+
     function write() {
         wrap=$(".main");
         for(var i=1;i<=day;i++) {
-            var name1,name2,number1,number2;
+            var name1=null,name2=null,number1=null,number2=null;
             for(var j=0;j<num;j++) {
                 if(role[j].date===i) {
                     if(role[j].murder==="killer") {
@@ -60,12 +65,15 @@ $(document).ready(function() {
                     }
                 }
             }
+            // console.log(name1);
+            // console.log(number1);
+            // console.log(name2);
+            // console.log(number2);
+            console.log(role);
             console.log(name1);
             console.log(number1);
-            console.log(name2);
-            console.log(number2);
 
-            if(name1===undefined) {
+            if(name1===null||name1===undefined) {
                 wrap.prepend(
                     '<div class="day" id="day1">' + '第' + i + '天' + '</div>' +
                     '<div class="day-b">' +
@@ -163,27 +171,7 @@ $(document).ready(function() {
     }
     write();
 
-    // 控制详细数据的显示和隐藏
-    $("#killery").hide();
-    $("#peopley").hide();
-    function getrequest() {
-        var url=location.search;
-        if(url.indexOf("?")!==-1) {
-            var str=url.substr(1);
-            if(str==="kill") {
-                $("#killery").show();
-                $("#killer").css("background","#9a9a9a");
-                $(cstyle[0]).css("border-right","20px solid #9a9a9a");
-            }
-            else if(str==="vote") {
-                $("#people").show();
 
-            }
-            else if(str==="diary") {
-            }
-        }
-    }
-    getrequest();
 
     // 隐藏之前天数的详细数据
     for(var m=day-1;m>0;m--) {
@@ -298,7 +286,29 @@ $(document).ready(function() {
     // Color();
     // console.log("color: event = "+event);
 
+// 控制详细数据的显示和隐藏
+    $("#killery").hide();
+    $("#peopley").hide();
+    function getrequest() {
+        var url=location.search;
+        if(url.indexOf("?")!==-1) {
+            var str=url.substr(1);
+            if(str==="kill") {
+                $("#killery").show();
+                $("#killer").css("background","#9a9a9a");
+                $(cstyle[0]).css("border-right","20px solid #9a9a9a");
+                name1=null;
+                number1=null;
+            }
+            else if(str==="vote") {
+                $("#people").show();
 
+            }
+            else if(str==="diary") {
+            }
+        }
+    }
+    getrequest();
 
 
     // 流程点击事件
@@ -319,6 +329,7 @@ $(document).ready(function() {
     $("#vote").click(function () {
         window.location.href="js4-2.html?vote";
     });
+
 
     // 底部按钮点击事件
     $("#btn1").click(function() {
