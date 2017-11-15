@@ -46,7 +46,8 @@ $(document).ready(function() {
                 console.log(result);
                 console.log(txt);
                 if (txt.message === "success") {
-                    document.getElementById("prompt").innerText = texts.message;
+                    // document.getElementById("prompt").innerText = txt.message;
+                    $("#prompt").text(txt.message);
                     // window.location.href = "www.google.com";
                 }
                 else {
