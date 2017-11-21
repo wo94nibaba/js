@@ -52,21 +52,25 @@
                 </tr>
                 <tr class="" ng-repeat="x in thelist">
                     <td>{{$index+1}}</td>
-                    <td style="width: 70px">{{x.title}}</td>
+                    <td>{{x.title}}</td>
                     <td>{{x.type | type}}</td>
                     <td>{{x.createAt | date:'y-M-d HH:mm:ss'}}</td>
                     <td>{{x.updateAt | date:'y-M-d HH:mm:ss'}}</td>
                     <td>{{x.author}}</td>
                     <td>{{x.status | status}}</td>
-                    <td style="width: 180px">
-                        <a class="btn">下载</a>
-                        <a class="btn">编辑</a>
-                        <a class="btn">删除</a>
+                    <td>
+                        <a class="btn btn-sm">下载</a>
+                        <a class="btn btn-sm">编辑</a>
+                        <a class="btn btn-sm">删除</a>
                     </td>
                 </tr>
             </table>
         </div>
         <div class="fenye">
+            <label for="pagea" style="font-size: 1.5rem;"></label>
+            <span class="tip">每页显示</span>
+            <input type="text" class="form-control" id="pagea" style="display: inline-block;width: 50px; vertical-align: middle">
+            <span class="tip">条</span>
             <button class="btn">
                 首页
             </button>
@@ -79,9 +83,15 @@
             <button class="btn">
                 下一页
             </button>
-            <input class="form-control" type="text" style="display: inline-block;width: 50px; vertical-align: middle">
+            <label for="pageb" style="font-size: 1.5rem;"></label>
+                <span class="tip">去第</span>
+                <input type="text" class="form-control" id="pageb" style="display: inline-block;width: 50px; vertical-align: middle">
+                <span class="tip">页</span>
             <button class="btn">
                 末页
+            </button>
+            <button class="btn">
+                确定
             </button>
         </div>
     </div>
