@@ -1,0 +1,90 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>task6-2</title>-->
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
+    <!--<link rel="stylesheet" href="../css/articlelist.css" type="text/css">-->
+    <!--<link rel="stylesheet" href="../css/bootstrap.css">-->
+
+<!--</head>-->
+<!--<body>-->
+    <div class="bottom" ng-controller="articlelist">
+        <div class="container-fluid b-t">
+            <div class="row">
+                <label for="time1" class="col-md-4 a">
+                    发布时间 <input type="text" id="time1">
+                </label>
+                <label for="time2" class="col-md-4 a">
+                    <span>-</span> <input type="text" id="time2">
+                </label>
+                <label for="time3" class="col-md-4 a">
+                    类型 <input type="text" id="time3">
+                </label>
+            </div>
+            <div class="row">
+                <label for="status" class="col-md-4 a">
+                    状态 <input type="text" id="status">
+                </label>
+                <button type="button" id="btn1">
+                    搜索
+                </button>
+                <button type="button" id="btn2">
+                    清空
+                </button>
+            </div>
+        </div>
+        <div class="b-b">
+            <div class="list">
+                <span>articlelist</span>
+                <button type="button" id="btn3" ui-sref="backstage.addarticle">新增</button>
+            </div>
+            <table class="bb">
+                <tr class="">
+                    <th>ID</th>
+                    <th>名称</th>
+                    <th>类型</th>
+                    <th>发布时间</th>
+                    <th>修改时间</th>
+                    <th>发布者</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                <tr class="" ng-repeat="x in thelist">
+                    <td>{{$index+1}}</td>
+                    <td style="width: 70px">{{x.title}}</td>
+                    <td>{{x.type | type}}</td>
+                    <td>{{x.createAt | date:'y-M-d HH:mm:ss'}}</td>
+                    <td>{{x.updateAt | date:'y-M-d HH:mm:ss'}}</td>
+                    <td>{{x.author}}</td>
+                    <td>{{x.status | status}}</td>
+                    <td style="width: 180px">
+                        <a class="btn">下载</a>
+                        <a class="btn">编辑</a>
+                        <a class="btn">删除</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="fenye">
+            <button class="btn">
+                首页
+            </button>
+            <button class="btn">
+                上一页
+            </button>
+            <button class="btn">
+                第{{page}}页
+            </button>
+            <button class="btn">
+                下一页
+            </button>
+            <input class="form-control" type="text" style="display: inline-block;width: 50px; vertical-align: middle">
+            <button class="btn">
+                末页
+            </button>
+        </div>
+    </div>
+
+<!--</body>-->
+<!--</html>-->
