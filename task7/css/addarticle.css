@@ -1,0 +1,17 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+}
+.addmain {
+    border: 1px solid #999999;
+}
+.addb {
+    width: 100%;
+    line-height: 6rem;
+}
+.addb span {
+    margin-left: 3rem;
+    font-size: 2rem;
+}

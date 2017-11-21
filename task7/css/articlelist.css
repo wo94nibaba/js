@@ -1,0 +1,152 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+}
+.wrap1 {
+    width: 100%;
+    min-height: 100vh;
+    /*overflow: hidden;*/
+    /*clear: both;*/
+}
+/*.left {*/
+    /*float: left;*/
+    /*width: 20%;*/
+    /*min-height: 100vh;*/
+    /*!*height: 100vh;*!*/
+    /*!*padding-bottom: 9000px;*!*/
+    /*!*margin-bottom: -9000px;*!*/
+    /*color: #ffffff;*/
+    /*background: #122b40;*/
+/*}*/
+.right {
+    float: left;
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
+    width: 80%;
+    /*height: 100vh;*/
+}
+/*.left h1 {*/
+    /*margin: 0;*/
+    /*line-height: 6rem;*/
+    /*text-align: center;*/
+    /*font-size: 2.5rem;*/
+    /*border-bottom: 1px solid #999999;*/
+/*}*/
+/*.left ul {*/
+    /*padding-left: 5rem;*/
+    /*font-size: 2rem;*/
+    /*list-style: none;*/
+/*}*/
+/*.left ul li {*/
+    /*margin: 1rem;*/
+/*}*/
+
+.top {
+    display: flex;
+    height: 6rem;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid #999999;
+}
+
+#id1 {
+    margin-right: 3rem;
+    color: #29bde0;
+}
+#id2 {
+    margin-right: 3rem;
+    color: #29bde0;
+}
+#close {
+    width: 5rem;
+    height: 3rem;
+    margin-right: 3rem;
+    vertical-align: middle;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.bottom {
+    margin: 2rem;
+    font-size: 3rem;
+}
+.a {
+    font-size: 1.3rem;
+}
+.b-t {
+    /*margin: 2rem;*/
+    border: 1px solid #999999;
+}
+.row button {
+    float: right;
+    margin-right: 3rem;
+    width: 6rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+}
+.row {
+    margin: 1rem 0;
+}
+.b-b {
+    margin-top: 2rem;
+    /*width: 100%;*/
+    font-size: 1rem;
+    border: 1px solid #999999;
+}
+.list {
+    /*width: 100%;*/
+    line-height: 6rem;
+    border-bottom: 1px solid #999999;
+}
+.list span {
+    margin-left: 3rem;
+    font-size: 2rem;
+}
+#btn3 {
+    float: right;
+    margin-top: 1.5rem;
+    margin-right: 3rem;
+    width: 6rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.bb {
+    margin: 2rem auto;
+    width: 95%;
+    /*font-size: 2rem;*/
+    border: 1px solid #999999;
+}
+.bb tr {
+    width: 100%;
+}
+.bb th {
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+
+}
+.bb tr td {
+    word-break: break-all;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#time1 {
+
+}
+.btn {
+    font-size: 1rem;
+}
+
+
+

@@ -1,0 +1,51 @@
+
+<div class="wrap1" ng-controller="backStageCtrl">
+    <div class="left">
+        <h1>
+            萝卜多后台管理
+        </h1>
+        <ul id="accordion" class="accordion">
+            <li>
+                <div class="link"><i class="fa fa-paint-brush"></i>信息管理<i class="fa fa-chevron-down"><</i></div>
+            </li>
+            <li>
+                <div class="link"><i class="fa fa-code"></i>article管理<i class="fa fa-chevron-down"><</i></div>
+                <ul class="submenu">
+                    <li ui-sref="backstage.articlelist"><a href="#">articlelist</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="fa fa-mobile"></i>人才管理<i class="fa fa-chevron-down"><</i></div>
+            </li>
+            <li>
+                <div class="link"><i class="fa fa-mobile"></i>推荐管理<i class="fa fa-chevron-down"><</i></div>
+            </li>
+            <li>
+                <div class="link"><i class="fa fa-mobile"></i>后台管理<i class="fa fa-chevron-down"><</i></div>
+            </li>
+            <li>
+                <div class="link"><i class="fa fa-mobile"></i>用户管理<i class="fa fa-chevron-down"><</i></div>
+            </li>
+            <li>
+                <div class="link"><i class="fa fa-mobile"></i>内容管理<i class="fa fa-chevron-down"><</i></div>
+            </li>
+        </ul>
+    </div>
+    <div class="right">
+        <div class="top">
+        <span id="id1">
+            猎头
+        </span>
+            <span id="id2">
+            user
+        </span>
+            <button type="button" id="close">
+                退出
+            </button>
+        </div>
+        <div class="bottom" ui-view>
+            Welcome!
+        </div>
+    </div>
+</div>
+

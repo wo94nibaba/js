@@ -1,0 +1,151 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+}
+.wrap1 {
+    width: 100%;
+}
+.left {
+    float: left;
+    width: 20%;
+    min-height: 100vh;
+    /*padding-bottom: 5000px;*/
+    /*margin-bottom: -5000px;*/
+    color: #ffffff;
+    background: #122b40;
+}
+.right {
+    float: right;
+    /*padding-bottom: 5000px;*/
+    /*margin-bottom: -5000px;*/
+    width: 80%;
+}
+ul {
+    padding: 0;
+    word-break: normal;
+    list-style-type: none;
+}
+a {
+    color: #b63b4d;
+    text-decoration: none;
+}
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+.accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.accordion li:last-child .link {
+    border-bottom: 0;
+}
+.accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+.accordion li.open .link {
+    color: #b63b4d;
+}
+.accordion li.open i {
+    color: #b63b4d;
+}
+.accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.submenu {
+    display: none;
+    background: #444359;
+    font-size: 14px;
+}
+.submenu li {
+    border-bottom: 1px solid #4b4a5e;
+}
+.submenu a {
+    display: block;
+    text-decoration: none;
+    color: #d9d9d9;
+    padding: 12px;
+    padding-left: 42px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.submenu a:hover {
+    background: #b63b4d;
+    color: #FFF;
+}
+.left h1 {
+    margin: 0;
+    line-height: 6rem;
+    text-align: center;
+    font-size: 2.5rem;
+    border-bottom: 1px solid #999999;
+}
+.left ul {
+    /*padding-left: 5rem;*/
+    padding: 0;
+    font-size: 2rem;
+    list-style: none;
+}
+.left ul li {
+    line-height: 4rem;
+}
+.right {
+    float: right;
+    width: 80%;
+    height: 100vh;
+}
+.top {
+    display: flex;
+    height: 6rem;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid #999999;
+}
+
+#id1 {
+    margin-right: 3rem;
+    color: #29bde0;
+}
+#id2 {
+    margin-right: 3rem;
+    color: #29bde0;
+}
+#close {
+    width: 5rem;
+    height: 3rem;
+    margin-right: 3rem;
+    vertical-align: middle;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.bottom {
+    margin: 2rem;
+    font-size: 3rem;
+}
+
