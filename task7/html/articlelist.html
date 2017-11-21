@@ -53,11 +53,11 @@
                 <tr class="" ng-repeat="x in thelist">
                     <td>{{$index+1}}</td>
                     <td style="width: 70px">{{x.title}}</td>
-                    <td>{{x.type}}</td>
-                    <td>{{x.createAt | date:y-M-d}}</td>
-                    <td>{{x.updateAt | date:'MM/dd/yyyy @ h:mma'}}</td>
+                    <td>{{x.type | type}}</td>
+                    <td>{{x.createAt | date:'y-M-d HH:mm:ss'}}</td>
+                    <td>{{x.updateAt | date:'y-M-d HH:mm:ss'}}</td>
                     <td>{{x.author}}</td>
-                    <td>{{x.status}}</td>
+                    <td>{{x.status | status}}</td>
                     <td style="width: 180px">
                         <a class="btn">下载</a>
                         <a class="btn">编辑</a>
@@ -65,6 +65,24 @@
                     </td>
                 </tr>
             </table>
+        </div>
+        <div class="fenye">
+            <button class="btn">
+                首页
+            </button>
+            <button class="btn">
+                上一页
+            </button>
+            <button class="btn">
+                第{{page}}页
+            </button>
+            <button class="btn">
+                下一页
+            </button>
+            <input class="form-control" type="text" style="display: inline-block;width: 50px; vertical-align: middle">
+            <button class="btn">
+                末页
+            </button>
         </div>
     </div>
 

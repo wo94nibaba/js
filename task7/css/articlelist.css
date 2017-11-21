@@ -1,15 +1,15 @@
-html {
-    font-size: 62.5%;
-}
-body {
-    margin: 0;
-}
-.wrap1 {
-    width: 100%;
-    min-height: 100vh;
-    /*overflow: hidden;*/
-    /*clear: both;*/
-}
+/*html {*/
+    /*font-size: 62.5%;*/
+/*}*/
+/*body {*/
+    /*margin: 0;*/
+/*}*/
+/*.wrap1 {*/
+    /*width: 100%;*/
+    /*min-height: 100vh;*/
+    /*!*overflow: hidden;*!*/
+    /*!*clear: both;*!*/
+/*}*/
 /*.left {*/
     /*float: left;*/
     /*width: 20%;*/
@@ -20,58 +20,42 @@ body {
     /*color: #ffffff;*/
     /*background: #122b40;*/
 /*}*/
-.right {
-    float: left;
-    padding-bottom: 5000px;
-    margin-bottom: -5000px;
-    width: 80%;
-    /*height: 100vh;*/
-}
-/*.left h1 {*/
-    /*margin: 0;*/
-    /*line-height: 6rem;*/
-    /*text-align: center;*/
-    /*font-size: 2.5rem;*/
+    /*.right {*/
+        /*float: left;*/
+        /*padding-bottom: 5000px;*/
+        /*margin-bottom: -5000px;*/
+        /*width: 80%;*/
+        /**/
+    /*}*/
+/*.top {*/
+    /*display: flex;*/
+    /*height: 6rem;*/
+    /*align-items: center;*/
+    /*justify-content: flex-end;*/
     /*border-bottom: 1px solid #999999;*/
 /*}*/
-/*.left ul {*/
-    /*padding-left: 5rem;*/
-    /*font-size: 2rem;*/
-    /*list-style: none;*/
-/*}*/
-/*.left ul li {*/
-    /*margin: 1rem;*/
-/*}*/
 
-.top {
-    display: flex;
-    height: 6rem;
-    align-items: center;
-    justify-content: flex-end;
-    border-bottom: 1px solid #999999;
-}
-
-#id1 {
-    margin-right: 3rem;
-    color: #29bde0;
-}
-#id2 {
-    margin-right: 3rem;
-    color: #29bde0;
-}
-#close {
-    width: 5rem;
-    height: 3rem;
-    margin-right: 3rem;
-    vertical-align: middle;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-}
-.bottom {
-    margin: 2rem;
-    font-size: 3rem;
-}
+/*#id1 {*/
+    /*margin-right: 3rem;*/
+    /*color: #29bde0;*/
+/*}*/
+/*#id2 {*/
+    /*margin-right: 3rem;*/
+    /*color: #29bde0;*/
+/*}*/
+/*#close {*/
+    /*width: 5rem;*/
+    /*height: 3rem;*/
+    /*margin-right: 3rem;*/
+    /*vertical-align: middle;*/
+    /*border-radius: 5px;*/
+    /*border: none;*/
+    /*outline: none;*/
+/*}*/
+/*.bottom {*/
+    /*margin: 2rem;*/
+    /*font-size: 3rem;*/
+/*}*/
 .a {
     font-size: 1.3rem;
 }

@@ -1,5 +1,5 @@
 
-myApp.controller("articlelist",function($scope,$http) {
+myApp.controller("articlelist",function($scope,$http,$filter) {
     $http({
         method:'get',
         url:'/carrots-admin-ajax/a/article/search',
@@ -7,31 +7,47 @@ myApp.controller("articlelist",function($scope,$http) {
 
         }
     })
-        .then(function(response) {
+        .then(function successCallback(response) {
             console.log(response.data);
             $scope.thelist = response.data.data.articleList;
-            var pagepage=response.data.data.page;
-            console.log(pagepage);
-        })
+            $scope.currentpage=response.data.data.page;
+        });
 });
-
-// myApp.controller("articlelist",function($scope,$http) {
-//     $scope.article = {
-//         ajaxData: []
-//     };
-//     $http({
-//         method:'get',
-//         url:'/carrots-admin-ajax/a/article/search',
-//         params: {
-//
-//         }
-//     })
-//         .then(function(res) {
-//             if (res.data.code === 0) {
-//                 $scope.article.ajaxData = res.data.data.articleList;
-//                 console.log(JSON.stringify($scope.article));
-//             } else {
-//                 alert('服务器异常');
-//             }
-//
-// })
+myApp.filter('type',function() {
+    return function(type) {
+        switch (type){
+            case 0:
+                type="首页banner";
+                break;
+            case 1:
+                type="找职位banner";
+                break;
+            case 2:
+                type="找精英banner";
+                break;
+            case 3:
+                type="行业大图";
+                break;
+            default:
+                type="文章";
+                break;
+        }
+        return type;
+    }
+});
+myApp.filter('status',function() {
+    return function(status) {
+        switch (status) {
+            case 1:
+                status="草稿";
+                break;
+            case 2:
+                status="上线";
+                break;
+            default:
+                status="草稿";
+                break;
+        }
+        return status;
+    }
+});
